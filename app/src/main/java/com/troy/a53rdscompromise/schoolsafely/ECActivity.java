@@ -14,6 +14,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SearchView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -25,6 +26,12 @@ public class ECActivity extends AppCompatActivity{
     ListView listView;
     ArrayList<String> list;
     ArrayAdapter<String> adapter;
+    TextView contactName;
+
+
+    public void updateTextView(int i){
+        contactName.setText((String)listView.getItemAtPosition(i));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,18 +39,24 @@ public class ECActivity extends AppCompatActivity{
         setContentView(R.layout.activity_ec);
 
         SearchView searchView = (SearchView)findViewById(R.id.searchView);
+        contactName = (TextView)findViewById(R.id.contactName);
         listView = (ListView)findViewById(R.id.contactsList);
         listView.setClickable(true);
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Object o = adapter.getItem(i);
 
                 Intent intent = new Intent(ECActivity.this,ContactActivity.class);
+                intent.putExtra("contactName.id", (String)listView.getItemAtPosition(i));
                 startActivity(intent);
 
             }
+
+
         });
+
+
         list = new ArrayList<>();
         list.add("Mom");
         list.add("Dad");

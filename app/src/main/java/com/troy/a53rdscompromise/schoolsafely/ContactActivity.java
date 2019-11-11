@@ -11,7 +11,12 @@ public class ContactActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact);
 
-        TextView contactName = (TextView)findViewById(R.id.contactName);
-        contactName.setText();
+        if (getIntent().hasExtra("contactName.id")) {
+
+            TextView contactName = (TextView) findViewById(R.id.contactName);
+            String text = getIntent().getExtras().getString("contactName.id");
+            contactName.setText(text);
+        }
+
     }
 }
