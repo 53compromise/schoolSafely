@@ -1,2 +1,5 @@
 include ':app'
+<<<<<<< HEAD
 rootProject.name='schoolsafety'
+=======
+>>>>>>> 213f5ed7bd5ce4c741c77ba4c48fbf333e52450b

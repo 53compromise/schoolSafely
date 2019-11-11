@@ -1,4 +1,18 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">schoolsafety</string>
     <string name="emergency_contacts">Emergency Contacts</string>
+=======
+    <string name="app_name">SchoolSafely</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="emergency_contacts">Emergency Contacts</string>
+    <string name="protocols">Protocols</string>
+    <string name="weather">Weather</string>
+    <string name="share">Share</string>
+>>>>>>> 213f5ed7bd5ce4c741c77ba4c48fbf333e52450b
 </resources>

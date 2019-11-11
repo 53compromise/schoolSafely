@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     package="com.example.schoolsafety">
+=======
+    package="com.troy.a53rdscompromise.schoolsafely">
+>>>>>>> 213f5ed7bd5ce4c741c77ba4c48fbf333e52450b
 
     <application
         android:allowBackup="true"
@@ -9,12 +13,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".Settings"></activity>
         <activity android:name=".Share" />
         <activity android:name=".Protocols" />
         <activity android:name=".Weather" />
         <activity android:name=".EmergencyContacts" />
         <activity android:name=".MainActivity">
+=======
+        <activity android:name=".ContactActivity"></activity>
+        <activity android:name=".ECActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="School Safely"
+            android:theme="@style/AppTheme.NoActionBar">
+>>>>>>> 213f5ed7bd5ce4c741c77ba4c48fbf333e52450b
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
