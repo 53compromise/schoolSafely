@@ -26,12 +26,7 @@ public class ECActivity extends AppCompatActivity{
     ListView listView;
     ArrayList<String> list;
     ArrayAdapter<String> adapter;
-    TextView contactName;
 
-
-    public void updateTextView(int i){
-        contactName.setText((String)listView.getItemAtPosition(i));
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +34,6 @@ public class ECActivity extends AppCompatActivity{
         setContentView(R.layout.activity_ec);
 
         SearchView searchView = (SearchView)findViewById(R.id.searchView);
-        contactName = (TextView)findViewById(R.id.contactName);
         listView = (ListView)findViewById(R.id.contactsList);
         listView.setClickable(true);
 

@@ -8,8 +8,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".ContactActivity"></activity>
+        android:theme="@style/AppTheme"
+        >
+        <activity android:name=".ContactEditActivity"></activity>
+        <activity android:name=".ContactActivity" />
         <activity android:name=".ECActivity" />
         <activity
             android:name=".MainActivity"

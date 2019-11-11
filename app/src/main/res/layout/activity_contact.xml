@@ -6,17 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ContactActivity">
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:inputType="phone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/contactName" />
-
     <TextView
         android:id="@+id/contactName"
         android:layout_width="0dp"
@@ -26,21 +15,58 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/saveButton"
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="155dp"
-        android:layout_marginLeft="155dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="155dp"
-        android:layout_marginRight="155dp"
-        android:text="Save"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:phoneNumber="true"
+        android:text="(123) 456-7890"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/contactName" />
+
+    <Button
+        android:id="@+id/callButton"
+        android:layout_width="121dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="167dp"
+        android:layout_marginLeft="167dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="167dp"
+        android:layout_marginRight="167dp"
+        android:text="Call"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="111dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="306dp"
+        android:layout_marginLeft="306dp"
+        android:layout_marginTop="510dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:text="Edit"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactName" />
+
 </android.support.constraint.ConstraintLayout>
