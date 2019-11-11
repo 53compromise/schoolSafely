@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "160792484333",
+    "firebase_url": "https://schoolsafely-7d903.firebaseio.com",
+    "project_id": "schoolsafely-7d903",
+    "storage_bucket": "schoolsafely-7d903.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160792484333:android:6984d83e5ee6026d272fe4",
+        "android_client_info": {
+          "package_name": "com.troy.a53rdscompromise.schoolsafely"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "160792484333-233oq3sk46jv6e41s3od4oa0c5r8bg74.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.troy.a53rdscompromise.schoolsafely",
+            "certificate_hash": "051ae5fd437ad21d6a09eebf0846c3cd6be765e1"
+          }
+        },
+        {
+          "client_id": "160792484333-ia7g2ull330jqkij1l0uk1be4del8ndq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnjUCd4JUHEKjBaRG7AcjamG_PjyW9rU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "160792484333-ia7g2ull330jqkij1l0uk1be4del8ndq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
