@@ -12,8 +12,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.androdocs.httprequest.HttpRequest;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 
