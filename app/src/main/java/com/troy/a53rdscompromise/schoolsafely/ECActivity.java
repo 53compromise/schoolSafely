@@ -20,19 +20,17 @@ public class ECActivity extends AppCompatActivity{
     ListView listView;
     ArrayList<String> list;
     ArrayAdapter<String> adapter;
-
+    TextView contactName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ec);
 
-<<<<<<< HEAD
-        SearchView searchView = (SearchView)findViewById(R.id.searchView);
-=======
+
         searchView = (SearchView)findViewById(R.id.searchView);
         contactName = (TextView)findViewById(R.id.contactName);
->>>>>>> 5719b144509b3e698b9775f2c922f551e18b1916
+
         listView = (ListView)findViewById(R.id.contactsList);
         listView.setClickable(true);
 

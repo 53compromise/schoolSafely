@@ -10,13 +10,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-<<<<<<< HEAD
         android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
         >
-        <activity android:name=".ContactEditActivity"></activity>
-=======
-        android:theme="@style/AppTheme">
->>>>>>> 5719b144509b3e698b9775f2c922f551e18b1916
+
+        <activity android:name=".ContactEditActivity" />
+
         <activity android:name=".ContactActivity" />
         <activity android:name=".ECActivity" />
         <activity
