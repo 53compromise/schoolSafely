@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity
         Button button1 = (Button)findViewById(R.id.emergency_contacts);
         Button button2 = (Button)findViewById(R.id.protocols);
         Button button3 = findViewById(R.id.weather);
+        Button button4 = (Button)findViewById(R.id.share);
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -56,6 +57,13 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view) {
                 Intent startIntent = new Intent(getApplicationContext(), ECActivity.class);
+                startActivity(startIntent);
+            }
+        });
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent startIntent = new Intent(getApplicationContext(), ShareActivity.class);
                 startActivity(startIntent);
             }
         });
