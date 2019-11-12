@@ -5,10 +5,11 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.troy.a53rdscompromise.schoolsafely"
-        minSdkVersion 15
+        minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
@@ -29,6 +30,8 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta3'
     implementation 'com.github.androdocs:Simple-HTTP-Request:v1.0'
     implementation 'com.google.firebase:firebase-firestore:17.1.2'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation("com.squareup.okhttp3:okhttp:4.2.1")
 
     testImplementation 'junit:junit:4.12'
 

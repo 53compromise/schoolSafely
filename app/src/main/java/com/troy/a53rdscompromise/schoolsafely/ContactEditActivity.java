@@ -1,7 +1,6 @@
 package com.troy.a53rdscompromise.schoolsafely;
 
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -55,7 +54,7 @@ public class ContactEditActivity extends AppCompatActivity {
                         })
                         .addOnFailureListener(new OnFailureListener() {
                             @Override
-                            public void onFailure(@NonNull Exception e) {
+                            public void onFailure(Exception e) {
                                 Log.w("Activity", "Error adding document", e);
                             }
                         });

@@ -37,6 +37,14 @@ public class MainActivity extends AppCompatActivity
 
         Button button1 = (Button)findViewById(R.id.emergency_contacts);
         Button button2 = (Button)findViewById(R.id.protocols);
+        Button button3 = findViewById(R.id.weather);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent startIntent = new Intent(getApplicationContext(),WeatherActivity.class);
+                startActivity(startIntent);
+            }
+        });
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

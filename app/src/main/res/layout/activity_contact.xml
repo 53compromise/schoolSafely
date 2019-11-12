@@ -51,7 +51,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
-<<<<<<< HEAD
+
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
@@ -70,8 +70,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contactName" />
 
-</android.support.constraint.ConstraintLayout>
-=======
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
 </androidx.constraintlayout.widget.ConstraintLayout>
->>>>>>> 5719b144509b3e698b9775f2c922f551e18b1916
