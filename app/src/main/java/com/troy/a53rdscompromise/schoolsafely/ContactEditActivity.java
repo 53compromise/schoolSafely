@@ -17,7 +17,12 @@ import java.util.Map;
 
 public class ContactEditActivity extends AppCompatActivity {
 
-    String newName;
+
+    /**
+     * Override void method onCreate
+     * onCreate initiates when the screen is created, sets out what to do.
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,18 +34,27 @@ public class ContactEditActivity extends AppCompatActivity {
             String text = getIntent().getExtras().getString("editName");
             contactName.setText(text);
         }
-        EditText nameInput = (EditText)findViewById(R.id.nameInput);
-        newName = nameInput.getText().toString();
 
-        Button changeName = (Button)findViewById(R.id.changeName);
+        Button change = (Button)findViewById(R.id.changeButton);
 
-        changeName.setOnClickListener(new View.OnClickListener() {
+        change.setOnClickListener(new View.OnClickListener() {
+
+            /**
+             * onClick is in a Listener that triggers when a button is pressed
+             * onClick overrides its superclass and items provided above to the firebase database.
+             * @param view
+             */
             @Override
             public void onClick(View view) {
                 // Create a new user with a first and last name
+
+                EditText nameInput = (EditText)findViewById(R.id.nameInput);
+                String newName = nameInput.getText().toString();
+                EditText numberInput = (EditText)findViewById(R.id.phoneNumberInput);
+                String newNumber = numberInput.getText().toString();
                 Map<String, Object> user = new HashMap<>();
                 user.put("name", newName);
-                user.put("number", "9495601282");
+                user.put("number", newNumber);
 
                 Log.d("Hello", "wow! ");
                 // Add a new document with a generated ID
