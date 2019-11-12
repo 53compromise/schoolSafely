@@ -54,7 +54,7 @@ public class ContactEditActivity extends AppCompatActivity {
                         })
                         .addOnFailureListener(new OnFailureListener() {
                             @Override
-                            public void onFailure(Exception e) {
+                            public void onFailure( Exception e) {
                                 Log.w("Activity", "Error adding document", e);
                             }
                         });
