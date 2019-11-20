@@ -49,6 +49,9 @@ public class WeatherActivity extends AppCompatActivity {
     }
 
 
+    /**
+     * class weatherTask
+     */
     class weatherTask extends AsyncTask<String, Void, String> {
 
         protected String doInBackground(String... args) {

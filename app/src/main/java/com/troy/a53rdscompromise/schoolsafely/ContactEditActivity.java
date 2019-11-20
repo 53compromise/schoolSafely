@@ -21,7 +21,7 @@ public class ContactEditActivity extends AppCompatActivity {
     /**
      * Override void method onCreate
      * onCreate initiates when the screen is created, sets out what to do.
-     * @param savedInstanceState
+     * @param savedInstanceState - passed onto super class
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,12 +46,14 @@ public class ContactEditActivity extends AppCompatActivity {
              */
             @Override
             public void onClick(View view) {
-                // Create a new user with a first and last name
 
+                // get data from userInput
                 EditText nameInput = (EditText)findViewById(R.id.nameInput);
                 String newName = nameInput.getText().toString();
                 EditText numberInput = (EditText)findViewById(R.id.phoneNumberInput);
                 String newNumber = numberInput.getText().toString();
+
+                // Create a new user with a name and phone number
                 Map<String, Object> user = new HashMap<>();
                 user.put("name", newName);
                 user.put("number", newNumber);

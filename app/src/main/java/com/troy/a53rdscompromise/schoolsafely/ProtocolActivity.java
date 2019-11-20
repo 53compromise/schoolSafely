@@ -34,6 +34,14 @@ public class ProtocolActivity extends AppCompatActivity {
 
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+
+            /**
+             * function onQueryTextSubmit overrides the superclass' function onQueryTextSubmit. It takes a
+             * String query and checks if the query is inside the protocolList.
+             * If the query is in protocolList, it returns true. Else, it returns false.
+             * @param query
+             * @return boolean
+             */
             @Override
             public boolean onQueryTextSubmit(String query) {
                 if (protocolList.contains(query)) {
