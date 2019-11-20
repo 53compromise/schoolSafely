@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "160792484333-es23v66lte22m0fdk3d1sh92bttt1ghm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.troy.a53rdscompromise.schoolsafely",
+            "certificate_hash": "ab9266451660d77a78de648553b28bc4ab5599fd"
+          }
+        },
+        {
           "client_id": "160792484333-233oq3sk46jv6e41s3od4oa0c5r8bg74.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
