@@ -1,7 +1,12 @@
 package com.troy.a53rdscompromise.schoolsafely;
 
+import android.Manifest;
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -36,6 +41,21 @@ public class ContactActivity extends AppCompatActivity {
 
             docId = getIntent().getExtras().getString("docId.id");
         }
+
+        Button callButton = (Button)findViewById(R.id.callButton);
+        callButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent callIntent = new Intent(Intent.ACTION_CALL);
+                callIntent.setData(Uri.parse("tel:"+phoneNumber1));
+
+                if (ActivityCompat.checkSelfPermission(ContactActivity.this,
+                        Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                    return;
+                }
+                startActivity(callIntent);
+            }
+        });
 
         Button editButton = (Button)findViewById(R.id.editButton);
         editButton.setOnClickListener(new View.OnClickListener() {

@@ -106,6 +106,9 @@ public class ECActivity extends AppCompatActivity{
             }
         });
 
+
+
+
         FloatingActionButton addContacts = (FloatingActionButton)findViewById(R.id.addContacts);
 
         addContacts.setOnClickListener(new View.OnClickListener() {
