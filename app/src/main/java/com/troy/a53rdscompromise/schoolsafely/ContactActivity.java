@@ -30,7 +30,6 @@ public class ContactActivity extends AppCompatActivity {
             TextView phoneNumber = (TextView) findViewById(R.id.phoneNumber1);
             phoneNumber1 = getIntent().getExtras().getString("phoneNumber.id");
             phoneNumber.setText(phoneNumber1);
-            Log.d("HELLO", phoneNumber1);
         }
 
         if (getIntent().hasExtra("docId.id")) {
